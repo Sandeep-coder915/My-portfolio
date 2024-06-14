@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
 
 <head>
@@ -96,7 +96,7 @@
                                 <li><a href="#works-section">Works</a></li>
                                 <li><a href="#resume-section">Resume</a></li>
                                 <li><a href="#skills-section">Skills</a></li>
-                               
+                                <!-- <li><a href="#testimonials-section">Testimonials</a></li> -->
                                 <li><a href="#contact-section">Contact</a></li>
                             </ul>
                         </nav>
@@ -1363,35 +1363,32 @@
                                     that!
                                 </p>
                             </div>
-
                             <div class="tj-contact-form">
-                                <!-- serviceid=service_ff498xl -->
-                                <!-- templateid=template_dk65dbe -->
                                 <form id="myForm" onsubmit="sendMail(event)">
                                     <div class="row gx-3">
                                         <div class="col-sm-6">
                                             <div class="form_group">
-                                                <input type="text" name="fname" id="fname" placeholder="First name" autocomplete="off">
+                                                <input type="text" name="fname" id="fname" placeholder="First name" autocomplete="off" required>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form_group">
-                                                <input type="text" name="lname" id="lname" placeholder="Last name" autocomplete="off">
+                                                <input type="text" name="lname" id="lname" placeholder="Last name" autocomplete="off" required>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form_group">
-                                                <input type="email" name="email" id="email" placeholder="Email address" autocomplete="off">
+                                                <input type="email" name="email" id="email" placeholder="Email address" autocomplete="off" required>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form_group">
-                                                <input type="tel" name="phone" id="phone" placeholder="Phone number" autocomplete="off">
+                                                <input type="tel" name="phone" id="phone" placeholder="Phone number" autocomplete="off" required>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form_group">
-                                                <select name="service" id="service" class="tj-nice-select">
+                                                <select name="service" id="service" class="tj-nice-select" required>
                                                     <option value="" selected disabled>Choose Service</option>
                                                     <option value="branding">Branding Design</option>
                                                     <option value="web">Web Design</option>
@@ -1402,7 +1399,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="form_group">
-                                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                                                <textarea name="message" id="message" placeholder="Message" required></textarea>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -1507,16 +1504,15 @@
     <script src="assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-   <script type="text/javascript">
-    (function() {
-        emailjs.init('sandeepkumar718835@gmail.com'); // Replace 'YOUR_USER_ID' with your EmailJS user ID
-    })();
-
+   <script type="text/javascript"> 
+emailjs.init('PCaT12-ZbXN6t6_aN');
+        
     function sendMail(event) {
         event.preventDefault();
 
-        var serviceID = 'service_ff498xl'; // Replace with your EmailJS service ID
-        var templateID = 'template_dk65dbe'; // Replace with your EmailJS template ID
+  
+        var serviceID = 'service_98msffh'; // Replace with your EmailJS service ID
+        var templateID = 'template_lh9fd6p';// Replace with your EmailJS template ID
 
         var templateParams = {
             fname: document.getElementById('fname').value,
@@ -1537,7 +1533,8 @@
                 alert('Message failed to send.');
             });
     }
-   </script>
+    
+</script>
 
 </body>
 
